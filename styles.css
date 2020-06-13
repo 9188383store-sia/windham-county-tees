@@ -7,8 +7,12 @@ body {
     width: 100%;
 }
 
+p {
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
+}
+
 h1 {
-    font-size: calc(20px + (60 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(34px + (75 - 34) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h3 {
@@ -19,15 +23,15 @@ h2 {
     font-size: calc(28px + (45 - 28) * ((100vw - 300px) / (1600 - 300)));
 }
 
-footer {
-    text-align: center;
-}
-
 .container {
     width: 85%;
     margin: auto;
     overflow: hidden;
     display: block;
+}
+
+hr {
+    width: 70%;
 }
 
 .white {
@@ -52,10 +56,6 @@ footer {
     z-index: 10;
 }
 
-hr {
-    width: 70%;
-}
-
 /* Header */
 
 header {
@@ -63,17 +63,18 @@ header {
     justify-content: space-between;
     position: absolute;
     z-index: 2;
-    /* top: 1vh;
-    left: 3vw; */
-    /* width: 80%; */
     left: 2%;
     right: 2%;
     top: 1%;
 }
 
+#logo {
+    width: calc(100px + (240 - 100) * ((100vw - 300px) / (1600 - 300)));
+}
+
 nav {
     display: flex;
-    align-self: center;
+    align-self: flex-start;
 }
 
 nav ul {
@@ -93,7 +94,7 @@ nav li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: calc(9px + (20 - 9) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(7px + (20 - 7) * ((100vw - 300px) / (1600 - 300)));
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -110,10 +111,6 @@ nav li:after {
 
 nav li:hover:after {
     border-color: #009DFF;
-}
-
-#logo {
-    width: 20vw;
 }
 
 /* Main Content */
@@ -148,8 +145,8 @@ nav li:hover:after {
     width: 100vw;
     z-index: 1;
     color: white;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: calc(12vh + (30 - 12) * ((100vw - 300px) / (1600 - 300)));
+    padding-bottom: calc(20vh + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
 
 #requestAQuote {
@@ -184,6 +181,10 @@ nav li:hover:after {
     width: 100vw;
 }
 
+#whatWeDo p {
+    padding-bottom: 4%;
+}
+
 #gallery {
     display: flex;
 }
@@ -200,13 +201,13 @@ nav li:hover:after {
 .galleryItemsColumn {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: calc(10px + (30 - 10) * ((100vw - 300px) / (1600 - 300)));
     align-items: center;
 }
 
 .galleryItemsColumn div {
-    width: 300px;
-    height: 300px;
+    width: calc(100px + (300 - 100) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(90px + (300 - 90) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .galleryItemsColumn div:hover {
@@ -260,9 +261,9 @@ nav li:hover:after {
     background-size: 100%;
 }
 
-#aboutMeImage {
-    height: 120px;
-    width: 120px;
+#aboutUsImage {
+    height: calc(90px + (140 - 90) * ((100vw - 300px) / (1600 - 300)));
+    width: calc(90px + (140 - 90) * ((100vw - 300px) / (1600 - 300)));
     margin: 0 auto;
     border-radius: 50%;
     background: url(images/petrSevcovic.jpg) no-repeat center;
@@ -273,4 +274,10 @@ nav li:hover:after {
 #aboutUs {
     position: relative;
     width: 100vw;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
