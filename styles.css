@@ -266,7 +266,7 @@ nav li:hover:after {
     width: calc(90px + (140 - 90) * ((100vw - 300px) / (1600 - 300)));
     margin: 0 auto;
     border-radius: 50%;
-    background: url(images/petrSevcovic.jpg) no-repeat center;
+    background: url(images/alanChartier.jpg) no-repeat center;
     background-size: 100%;
     margin-bottom: 50px;
 }
