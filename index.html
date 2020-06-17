@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Windham County Tees</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <img id="logo" src="images/WCTBranding.svg">
-            <nav>
-                <ul>
-                    <li><a href="#whatWeDo">What We Do</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#aboutUs">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="#whatWeDo">What We Do</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="flexColumn">
         <section id="mainContent">
@@ -25,7 +27,6 @@
                 <h1>Custom Screenprinting</h1>
                 <h3>Serving Connecticut Since 2007</h3>
                 <button type="button" id="requestAQuote">Request a Quote</button>
-                <button type="button" id="getMoreInfo">Get More Info</button>
             </div>
         </section>
 
@@ -178,6 +179,71 @@
             </div>
         </footer>
     </div>
+    <div class="modal closed" id="quoteModal">
+        <div class="modalHeader">
+            <h1>Request a Quote</h1>
+            <img id="closeQuoteModal" src="images/close-24px.svg">
+        </div>
+        <div class="modalContent">
+            <form name="requestAQuote" netlify>
+                <div class="flexFormColumn">
+                    <div>
+                        <label for="name" name="name">Name:</label><br>
+                        <input type="text" id="name"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="email" name="email">Email:</label><br>
+                        <input type="email" id="email"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="phone" name="phone">Phone:</label><br>
+                        <input type="text" id="phone"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="orderDate" name="orderDate">When do you need the order by?</label><br>
+                        <input type="date" id="orderDate"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="typeOfOrder">What is this order for (Event, Staff Shirts, etc.)?</label><br>
+                        <textarea id="typeOfOrder" name="typeOfOrder" rows="2" cols="50"></textarea><br><br>
+                    </div>
+
+                    <div>
+                        <label for="garmentTypeQuantity">How many and what kind of garments do you need
+                            printed?</label><br>
+                        <textarea id="garmentTypeQuantity" name="garmentTypeQuantity" rows="4"
+                            cols="50"></textarea><br><br>
+                    </div>
+
+                    <div>
+                        <label for="design">Do you need a design?</label><br>
+                        <select id="design" name="design">
+                            <option value="needDesign">I need a design</option>
+                            <option value="haveDesign">I have a design already</option>
+                            <option value="haveDesignWantChanges">I have a design but want to make changes</option>
+                        </select><br><br>
+                    </div>
+
+                    <div>
+                        <label for="designSpecs">Please explain the color(s) and placement of the design(s):</label><br>
+                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="50"></textarea><br><br>
+                    </div>
+
+                </div>
+                <div class="modalFooter">
+                    <button id="cancelRequest">Cancel</button>
+                    <input type="submit" value="Send Request">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="modalOverlay closed" id="quoteModalOverlay"></div>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
