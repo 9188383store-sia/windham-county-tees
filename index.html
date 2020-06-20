@@ -3,16 +3,27 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <title>Windham County Tees</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <header>
         <img id="logo" src="images/WCTBranding.svg">
-        <nav>
+
+        <nav id="nonMobileNav">
             <ul>
+                <li><a href="#whatWeDo">What We Do</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobileNav">
+            <div class="mobileNavIcon"></div>
+            <ul class="navList">
                 <li><a href="#whatWeDo">What We Do</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#aboutUs">About Us</a></li>
@@ -26,7 +37,7 @@
                 <h1>Small Batch,</h1>
                 <h1>Custom Screenprinting</h1>
                 <h3>Serving Connecticut Since 2007</h3>
-                <button type="button" id="requestAQuote">Request a Quote</button>
+                <button type="button" class="buttonPrimary" id="requestQuote">Request Quote</button>
             </div>
         </section>
 
@@ -82,7 +93,7 @@
                 <h2 class="centerHeadline">Gallery</h2>
                 <div class="galleryItemsRow">
                     <div class="galleryItemsColumn">
-                        <div id="galleryBox1"></div>
+                        <div id="galleryBox1" class="materialboxed"></div>
                     </div>
                     <div class="galleryItemsColumn">
                         <div id="galleryBox2"></div>
@@ -170,6 +181,7 @@
                 </p>
             </div>
         </section>
+        <hr>
         <footer id="contact">
             <div class="container">
                 <p id="contactPhone">+1 (888)-888-8888</p>
