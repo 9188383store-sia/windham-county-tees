@@ -201,12 +201,12 @@
                 <div class="flexFormColumn">
                     <div>
                         <label for="name" name="name">Name:</label><br>
-                        <input type="text" id="name"><br><br>
+                        <input type="text" id="name" required><br><br>
                     </div>
 
                     <div>
                         <label for="email" name="email">Email:</label><br>
-                        <input type="email" id="email"><br><br>
+                        <input type="email" id="email" required><br><br>
                     </div>
 
                     <div>
@@ -216,24 +216,24 @@
 
                     <div>
                         <label for="orderDate" name="orderDate">When do you need the order by?</label><br>
-                        <input type="date" id="orderDate"><br><br>
+                        <input type="date" id="orderDate" required><br><br>
                     </div>
 
                     <div>
-                        <label for="typeOfOrder">What is this order for (Event, Staff Shirts, etc.)?</label><br>
-                        <textarea id="typeOfOrder" name="typeOfOrder" rows="2" cols="50"></textarea><br><br>
+                        <label for="typeOfOrder">What is this order for? (Event, Staff Shirts, etc.)</label><br>
+                        <input id="typeOfOrder" name="typeOfOrder" required></input><br><br>
                     </div>
 
                     <div>
                         <label for="garmentTypeQuantity">How many and what kind of garments do you need
                             printed?</label><br>
                         <textarea id="garmentTypeQuantity" name="garmentTypeQuantity" rows="4"
-                            cols="50"></textarea><br><br>
+                            cols="25" required></textarea><br><br>
                     </div>
 
                     <div>
                         <label for="design">Do you need a design?</label><br>
-                        <select id="design" name="design">
+                        <select id="design" name="design" required>
                             <option value="needDesign">I need a design</option>
                             <option value="haveDesign">I have a design already</option>
                             <option value="haveDesignWantChanges">I have a design but want to make changes</option>
@@ -242,13 +242,13 @@
 
                     <div>
                         <label for="designSpecs">Please explain the color(s) and placement of the design(s):</label><br>
-                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="50"></textarea><br><br>
+                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="25"></textarea><br><br>
                     </div>
 
                 </div>
                 <div class="modalFooter">
-                    <button id="cancelRequest">Cancel</button>
-                    <input type="submit" value="Send Request">
+                    <input type="button" id="cancelRequest" class="buttonSecondary" value="Cancel">
+                    <input type="submit" value="Submit" class="buttonPrimary">
                 </div>
             </form>
         </div>
