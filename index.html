@@ -27,7 +27,7 @@
         </nav>
 
         <nav id="mobileNav">
-            <div class="mobileNavIcon"></div>
+            <div class="mobileNavIcon" onclick="toggleNav()"></div>
             <ul class="navList">
                 <li><a href="#whatWeDo" onclick="closeMobileNavMenu()">What We Do</a></li>
                 <li><a href="#gallery" onclick="closeMobileNavMenu()">Gallery</a></li>
@@ -42,14 +42,15 @@
                 <h1>Small Batch,</h1>
                 <h1>Custom Screenprinting</h1>
                 <h3>Serving New England Since 2007</h3>
-                <button type="button" class="buttonPrimary" id="requestQuote">Request Quote</button>
+                <button type="button" class="buttonPrimary" id="requestQuote" onclick="openModal()">Request
+                    Quote</button>
             </div>
         </section>
 
         <section id="whatWeDo">
             <div class="container topText">
-                <h2 class="centerHeadline white">What We Do</h2>
-                <p class="white">
+                <h2 class="centerHeadline">What We Do</h2>
+                <p>
                     We’re a small, homegrown screen-printing operation out of Windham County Connecticut primarily
                     specializing in hand screen-printed T-shirts and other garments for events, gatherings, camps,
                     and corporate staff shirts. With over 13 years of expertise in the field of small batch custom
