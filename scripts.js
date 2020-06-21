@@ -13,17 +13,17 @@ openQuoteModalBtn.addEventListener("click", function() {
     body.classList.add("modalOpen")
 })
 
-closeQuoteModalBtn.addEventListener("click", function closeModal() {
+function closeQuoteModal() {
+    document.getElementById("quoteContents").scrollIntoView(true);
     quoteModal.classList.toggle("closed")
     quoteModalOverlay.classList.toggle("closed")
     body.classList.remove("modalOpen")
-})
+}
 
-cancelQuoteRequestBtn.addEventListener("click", function closeModal() {
-    quoteModal.classList.toggle("closed")
-    quoteModalOverlay.classList.toggle("closed")
-    body.classList.remove("modalOpen")
-})
+function closeMobileNavMenu() {
+    mobileNav.classList.remove('open')
+    mobileNavIcon.classList.remove('mobileMenuOpen')
+}
 
 mobileNavIcon.addEventListener("click", function toggleNav() {
     mobileNav.classList.toggle('open')

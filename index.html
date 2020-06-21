@@ -24,10 +24,10 @@
         <nav id="mobileNav">
             <div class="mobileNavIcon"></div>
             <ul class="navList">
-                <li><a href="#whatWeDo">What We Do</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#aboutUs">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#whatWeDo" onclick="closeMobileNavMenu()">What We Do</a></li>
+                <li><a href="#gallery" onclick="closeMobileNavMenu()">Gallery</a></li>
+                <li><a href="#aboutUs" onclick="closeMobileNavMenu()">About Us</a></li>
+                <li><a href="#contact" onclick="closeMobileNavMenu()">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -194,11 +194,11 @@
     <div class="modal closed" id="quoteModal">
         <div class="modalHeader">
             <h1>Request a Quote</h1>
-            <img id="closeQuoteModal" src="images/close-24px.svg">
+            <img id="closeQuoteModal" src="images/close-24px.svg" onclick="closeQuoteModal()">
         </div>
         <div class="modalContent">
             <form name="requestAQuote" netlify>
-                <div class="flexFormColumn">
+                <div id="quoteContents" class="flexFormColumn">
                     <div>
                         <label for="name" name="name">Name:</label><br>
                         <input type="text" id="name" required><br><br>
@@ -233,7 +233,7 @@
 
                     <div>
                         <label for="design">Do you need a design?</label><br>
-                        <select id="design" name="design" required>
+                        <select id="design" name="design" class="select-css" required>
                             <option value="needDesign">I need a design</option>
                             <option value="haveDesign">I have a design already</option>
                             <option value="haveDesignWantChanges">I have a design but want to make changes</option>
@@ -242,19 +242,19 @@
 
                     <div>
                         <label for="designSpecs">Please explain the color(s) and placement of the design(s):</label><br>
-                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="25"></textarea><br><br>
+                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="25" required></textarea><br><br>
                     </div>
 
                 </div>
                 <div class="modalFooter">
-                    <input type="button" id="cancelRequest" class="buttonSecondary" value="Cancel">
+                    <input type="button" id="cancelRequest" class="buttonSecondary" value="Cancel" onclick="closeQuoteModal()">
                     <input type="submit" value="Submit" class="buttonPrimary">
                 </div>
             </form>
         </div>
 
     </div>
-    <div class="modalOverlay closed" id="quoteModalOverlay"></div>
+    <div class="modalOverlay closed" id="quoteModalOverlay" onclick="closeQuoteModal()"></div>
     <script src="scripts.js"></script>
 </body>
 
