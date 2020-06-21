@@ -73,6 +73,27 @@ textarea {
     padding: 10px;
 }
 
+/* No orders banner - Remove the top value from header
+   and change #mainContent's padding-top min vlaue to 18
+   when this is no longer needed */
+
+#noOrders {
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    padding: 8px 0;
+}
+
+#noOrders p {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+
 /* Header and Nav */
 
 header {
@@ -83,6 +104,7 @@ header {
     left: 2%;
     right: 0%;
     height: 20%;
+    top: 7vh;
 }
 
 #logo {
@@ -220,7 +242,7 @@ nav {
     width: 100vw;
     z-index: 1;
     color: white;
-    padding-top: calc(18vh + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
+    padding-top: calc(22vh + (30 - 22) * ((100vw - 300px) / (1600 - 300)));
     padding-bottom: calc(63vh + (63 - 63) * ((100vw - 300px) / (1600 - 300)));
 }
 
