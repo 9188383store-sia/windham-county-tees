@@ -61,6 +61,10 @@ input {
     border-radius: 5%;
 }
 
+input[type=date] {
+    cursor: context-menu;
+}
+
 label {
     font-size: 1.3rem;
 }
@@ -254,6 +258,7 @@ nav {
     color: white;
     font-size: 1rem;
     margin-top: 2vh;
+    cursor: pointer;
 }
 
 .buttonPrimary:hover, .buttonPrimary:active {
@@ -268,6 +273,7 @@ nav {
     color: rgb(29, 29, 29);
     font-size: 1rem;
     margin-top: 2vh;
+    cursor: pointer;
 }
 
 .buttonSecondary:hover, .buttonSecondary:active {
@@ -417,7 +423,6 @@ footer p {
     left: 50%;
     max-height: 90%;
     max-width: 95%;
-    padding: 15px;
     transform: translate(-50%, -50%);
     z-index: 11;
     background-color: whitesmoke;
@@ -470,6 +475,7 @@ footer p {
     align-self: flex-start;
     margin: 2%;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .modalFooter {
@@ -483,6 +489,29 @@ footer p {
 
 .modalOpen {
     overflow: hidden;
+}
+
+/* Input styling */
+
+.group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    background-color: #ebebeb;
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 18px;
+    padding: 24px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #0ebeff;
 }
 
 /* Select input Styling Credit: https://filamentgroup.github.io/select-css/demo/ */
@@ -510,6 +539,7 @@ footer p {
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
+    cursor: pointer;
 }
 
 .select-css:hover {

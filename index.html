@@ -22,7 +22,6 @@
                 <li><a href="#whatWeDo">What We Do</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#aboutUs">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -32,7 +31,6 @@
                 <li><a href="#whatWeDo" onclick="closeMobileNavMenu()">What We Do</a></li>
                 <li><a href="#gallery" onclick="closeMobileNavMenu()">Gallery</a></li>
                 <li><a href="#aboutUs" onclick="closeMobileNavMenu()">About Us</a></li>
-                <li><a href="#contact" onclick="closeMobileNavMenu()">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -178,39 +176,39 @@
         <div class="modalContent">
             <form name="requestAQuote" netlify>
                 <div id="quoteContents" class="flexFormColumn">
-                    <div>
-                        <label for="name" name="name">Name:</label><br>
-                        <input type="text" id="name" required><br><br>
+                    <div class="group">
+                        <label for="name" name="name">Name:</label>
+                        <input type="text" id="name" required>
                     </div>
 
-                    <div>
-                        <label for="email" name="email">Email:</label><br>
-                        <input type="email" id="email" required><br><br>
+                    <div class="group">
+                        <label for="email" name="email">Email:</label>
+                        <input type="email" id="email" required>
                     </div>
 
-                    <div>
-                        <label for="phone" name="phone">Phone:</label><br>
-                        <input type="text" id="phone"><br><br>
+                    <div class="group">
+                        <label for="phone" name="phone">Phone:</label>
+                        <input type="text" id="phone">
                     </div>
 
-                    <div>
+                    <div class="group">
                         <label for="orderDate" name="orderDate">When do you need the order by?</label><br>
-                        <input type="date" id="orderDate" required><br><br>
+                        <input type="date" id="orderDate" required>
                     </div>
 
-                    <div>
-                        <label for="typeOfOrder">What is this order for? (Event, Staff Shirts, etc.)</label><br>
-                        <input id="typeOfOrder" name="typeOfOrder" required></input><br><br>
+                    <div class="group">
+                        <label for="typeOfOrder">What is this order for? (Event, Staff Shirts, etc.)</label>
+                        <input id="typeOfOrder" name="typeOfOrder" required></input>
                     </div>
 
-                    <div>
+                    <div class="group">
                         <label for="garmentTypeQuantity">How many and what kind of garments do you need
-                            printed?</label><br>
+                            printed?</label>
                         <textarea id="garmentTypeQuantity" name="garmentTypeQuantity" rows="4" cols="25"
-                            required></textarea><br><br>
+                            required></textarea>
                     </div>
 
-                    <div>
+                    <div class="group">
                         <label for="design">Do you need a design?</label><br>
                         <select id="design" name="design" class="select-css" required>
                             <option value="needDesign">I need a design</option>
@@ -219,9 +217,9 @@
                         </select><br><br>
                     </div>
 
-                    <div>
-                        <label for="designSpecs">Please explain the color(s) and placement of the design(s):</label><br>
-                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="25" required></textarea><br><br>
+                    <div class="group">
+                        <label for="designSpecs">Please explain the color(s) and placement of the design(s):</label>
+                        <textarea id="designSpecs" name="designSpecs" rows="4" cols="25" required></textarea>
                     </div>
 
                 </div>
