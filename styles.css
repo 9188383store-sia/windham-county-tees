@@ -445,6 +445,12 @@ footer p {
     justify-content: flex-start;
     align-items: flex-start;
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.modalContent::-webkit-scrollbar {
+    display: none;
 }
 
 .closed {
