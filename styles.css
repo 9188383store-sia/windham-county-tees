@@ -406,11 +406,16 @@ nav {
 
 footer {
     margin-bottom: 5%;
+    text-align: center;
 }
 
 footer p {
     text-align: center;
     font-size: .9rem;
+}
+
+footer a {
+    color: black;
 }
 
 /* Modals */
@@ -573,10 +578,16 @@ input:focus, textarea:focus {
         justify-content: flex-start;
         align-items: flex-end;
     }
+
     nav {
         justify-content: flex-end;
     }
+
     #nonMobileNav {
         display: none;
+    }
+
+    #noOrders p {
+        font-size: 1.1rem;
     }
 }
