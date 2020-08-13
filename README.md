@@ -10,7 +10,7 @@ Windham County Tees is a small-batch T-shirt screenprinting business in Windham,
 
 -   HTML
 -   CSS
--   A tiny bit of JavaScript
+-   A wee bit of JavaScript
 -   Netlify Forms
 
 ## Problem
