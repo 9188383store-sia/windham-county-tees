@@ -6,7 +6,7 @@
 
 Windham County Tees is a small-batch T-shirt screenprinting business in Windham, CT which is owned and operated by my Dad, Alan. I designed and built him this website for Father's Day to help him market his business.
 
-## Technologies
+## Technologies Used
 
 -   HTML
 -   CSS
